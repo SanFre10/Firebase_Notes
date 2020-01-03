@@ -1,0 +1,48 @@
+/* notes */
+
+.btn,
+.modal btn {
+    color: white;
+}
+
+.dropButton {
+    color: black;
+}
+
+.modal {
+    text-align: center;
+}
+
+.card {
+    text-align: center;
+    margin: 1%;
+    max-width: 25%;
+}
+
+.card-text {
+    font-weight: normal;
+}
+
+.fas {
+    margin: 20px 0px -10px 0;
+}
+
+.fa-edit {
+    margin-left: 20px;
+}
+
+.fa-trash {
+    margin-right: 20px;
+}
+
+.fas,
+.edit-label,
+.delete-label:hover {
+    cursor: pointer;
+}
+
+.time,
+.time-label {
+    display: block;
+    font-size: 0.7em;
+}

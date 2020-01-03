@@ -1,0 +1,90 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">SanFre-Notes</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Create
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <button type="button" class="btn dropButton" data-toggle="modal" data-target="#create-modal">Note</button>
+        </div>
+      </li>
+      <li class="nav-item">
+        <button type="button" class="btn" id="logout">LogOut</button>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="notes">
+    <!-- Luego se agregan las notas del usuario con el auth.js -->
+</div>
+
+
+
+
+<!-- create-modal -->
+<div class="modal fade" id="create-modal" tabindex="-1" role="dialog" aria-labelledby="create-modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Create-Note</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times</button>
+      </div>
+      <div class="modal-body">
+        <form id="create-form">
+            <input type="text" placeholder="Title" id="title">
+            <input type="text" placeholder="Content" id="content">
+            <button type="submit">Create</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <h6>Hola</h6>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- edit-modal -->
+<div class="modal fade" id="edit-modal" tabindex="-1" role="dialog" aria-labelledby="edit-modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Edit</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times</button>
+      </div>
+      <div class="modal-body">
+        <form id="edit-form">
+            <input type="text" placeholder="Title" id="title-edit">
+            <input type="text" placeholder="Content" id="content-edit">
+            <button type="submit">Edit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- delete-modal -->
+<div class="modal fade" id="delete-modal" tabindex="-1" role="dialog" aria-labelledby="delete-modalTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Do you really want to delete this note?</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">&times</button>
+      </div>
+      <div class="modal-body">
+        <form id="delete-form">
+            <button data-dismiss="modal" class="btn btn-info">Cancel</button>
+            <button type="submit" class="btn btn-danger">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
